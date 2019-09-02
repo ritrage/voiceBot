@@ -21,19 +21,25 @@
                 android:layout_height="80dp"
                 android:orientation="horizontal">
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="125dp"
                     android:layout_height="80dp"
-                    android:textSize="50dp"
-                    android:layout_weight="3"
+                    android:textSize="40dp"
                     android:text="Name:"/>
 
                 <EditText
                     android:id="@+id/username"
-                    android:layout_width="match_parent"
+                    android:layout_width="180dp"
                     android:layout_height="80dp"
                     android:textSize="40dp"
-                    android:layout_weight="2"
                      />
+                <ImageButton
+                    android:id="@+id/confirmUsername"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/tick"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    />
             </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
@@ -41,8 +47,10 @@
                 android:background="#696A62"/>
         </LinearLayout>
         <TextView
+            android:id="@+id/displayText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
             android:layout_marginBottom="120dp" />
 
         <ImageButton
@@ -51,7 +59,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="6dp"
             android:layout_centerInParent="true"
-            android:onClick="record"
+            android:id="@+id/onRecord"
             android:background="#696A62"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"
